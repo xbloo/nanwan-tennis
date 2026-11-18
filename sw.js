@@ -1,5 +1,5 @@
-const CACHE = "nanwan-tennis-v1";
-const ASSETS = ["./index.html","./manifest.webmanifest","./icons/icon-192.png","./icons/icon-512.png","./icons/apple-touch-icon.png","./icons/favicon-32.png","./assets/index-DNGjLt-4.css","./assets/index-D-e72392.js"];
+const CACHE = "nanwan-tennis-v2";
+const ASSETS = ["./index.html","./manifest.webmanifest","./icons/icon-192.png","./icons/icon-512.png","./icons/apple-touch-icon.png","./icons/favicon-32.png","./assets/index-DNGjLt-4.css","./assets/index-v2-data2026-11.js"];
 self.addEventListener("install", (event) => {
   event.waitUntil(caches.open(CACHE).then((cache) => cache.addAll(ASSETS)).then(() => self.skipWaiting()));
 });
